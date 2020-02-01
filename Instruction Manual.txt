@@ -1,0 +1,12 @@
+=== Controls ===
+
+Movement
+
+Move Left:  'A' or left arrow key
+Move Right: 'D' or right arrow key
+Jump:        Spacebar
+
+Attack
+
+Sword:      Hold down left mouse
+Projectile: Hold down right mouse
