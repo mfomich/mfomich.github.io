@@ -437,9 +437,9 @@ ASSET_MANAGER.downloadAll(function () {
     var gameEngine = new GameEngine();
     var bg = new Background(gameEngine);
     var hero = new Hero(gameEngine);
-    var e1 = new Cannon(gameEngine);
     var a1 = new Anim(gameEngine);
-
+    var e1 = new Cannon(gameEngine);
+	
     gameEngine.addEntity(bg);
     gameEngine.addEntity(hero);
     gameEngine.addEntity(a1);
