@@ -407,7 +407,7 @@ Anim.prototype.draw = function (ctx) {
 	
 	
 
-   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 0.1);
+   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 0.3);
 
     
     Entity.prototype.draw.call(this);
