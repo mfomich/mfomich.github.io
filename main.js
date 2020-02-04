@@ -91,7 +91,7 @@ function Hero(game) {
     this.jumpAnimation = new Animation(ASSET_MANAGER.getAsset("./img/Hero.png"), 0, 0, 55, 60, .20, 5, true, false);
     this.jumpAnimationL = new Animation(ASSET_MANAGER.getAsset("./img/Hero.png"), 0, 60, 55, 60, .20, 5, true, false);
     this.SwordR = new Animation(ASSET_MANAGER.getAsset("./img/HeroSword.png"), 0, 0, 60, 60, .15, 9, true, true);
-    this.SwordL = new Animation(ASSET_MANAGER.getAsset("./img/HeroSwordR.png"), 0, 0, 60, 60, .15, 9, true, true);
+    this.SwordL = new Animation(ASSET_MANAGER.getAsset("./img/HeroSwordR.png"), 0, 0, 60, 60, .15, 9, true, false);
     this.jumping = false;
     this.attack = false;
     this.moveR = false;
@@ -280,8 +280,8 @@ Projectile.prototype.draw = function (ctx) {
 // --- Start of Cannon
 
 function Cannon(game) {
-    this.C1 = new Animation(ASSET_MANAGER.getAsset("./img/Cannon.png"), 0, 0, 130, 85, .20, 3, true, true);
-    this.CR = new Animation(ASSET_MANAGER.getAsset("./img/CannonR.png"), 0, 0, 130, 85, .20, 3, true, true);
+    this.C1 = new Animation(ASSET_MANAGER.getAsset("./img/Cannon.png"), 0, 0, 130, 87, .20, 3, true, true);
+    this.CR = new Animation(ASSET_MANAGER.getAsset("./img/CannonR.png"), 0, 0, 130, 87, .20, 3, true, true);
     this.jumping = false;
     this.attack = false;
     this.moveR = true;
