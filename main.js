@@ -498,12 +498,12 @@ ASSET_MANAGER.downloadAll(function () {
     var bg = new Background(gameEngine);
     var hero = new Hero(gameEngine);
    // var e1 = new Cannon(gameEngine);
-   // var a1 = new Anim(gameEngine);
+    var a1 = new Anim(gameEngine);
 
     gameEngine.addEntity(bg);
     gameEngine.addEntity(hero);
     //gameEngine.addEntity(e1);
-    //gameEngine.addEntity(a1);
+    gameEngine.addEntity(a1);
 
     // gameEngine.addEntity(new Projectile(gameEngine));
  
