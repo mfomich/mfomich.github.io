@@ -398,55 +398,7 @@ Anim.prototype.constructor = Anim;
 // The update function
 Anim.prototype.update = function () {
 
-    if (this.y > this.ground) {
-        this.jumping = false;
-        this.y = this.ground;
-        this.canJump = true;
-        this.yAccel = 0;
-    }
-
-
-    if (this.jumping === false) {
-        if (this.accel < -1) {
-            this.accel += .2;
-        } else if (this.accel > 1) {
-            this.accel -= .2;
-        } else {
-            this.accel = 0;
-        }
-    }
-
-    this.x = this.x + this.accel;  
-    
-    if (this.x < 150) {
-    	this.moveR = true;
-    	this.moveL = false;
-    }
-    if (this.x > 700) {
-    	this.moveL = true;
-    	this.moveR = false
-    }
   
-
-    if (this.moveR) {
-        this.direction = true;
-        if (this.accel > 0) {
-            this.accel = 5;
-
-        } else {
-            this.accel = 3;
-       }
-    }
-
-    if (this.moveL) {
-        this.direction = false;
-        if (this.accel < 0) {
-            this.accel = -5;
-        } else {
-            this.accel = -3;
-        }
-
-    }
 
     Entity.prototype.update.call(this);
 }
