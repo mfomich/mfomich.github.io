@@ -377,8 +377,8 @@ Cannon.prototype.draw = function (ctx) {
 }
 
 function Bird(game) {
-    this.B1 = new Animation(ASSET_MANAGER.getAsset("./img/Jay.png"), 0, 0, 110, 100, .20, 3, true, true);
-    this.BR = new Animation(ASSET_MANAGER.getAsset("./img/JayL.png"), 0, 0, 110, 100, .20, 3, true, false);
+    this.B1 = new Animation(ASSET_MANAGER.getAsset("./img/JayL.png"), 0, 0, 110, 100, .20, 3, true, true);
+    this.BR = new Animation(ASSET_MANAGER.getAsset("./img/Jay.png"), 0, 0, 110, 100, .20, 3, true, false);
     this.jumping = false;
     this.attack = false;
     this.moveR = true;
