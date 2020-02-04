@@ -485,8 +485,8 @@ ASSET_MANAGER.queueDownload("./img/52Tile.png");
 ASSET_MANAGER.queueDownload("./img/52Tilea.png");
 ASSET_MANAGER.queueDownload("./img/HudPrototype1.png");
 ASSET_MANAGER.queueDownload("./img/bullet.png");
-//ASSET_MANAGER.queueDownload("./img/Cannon.png");
-//ASSET_MANAGER.queueDownload("./img/CannonR.png");
+ASSET_MANAGER.queueDownload("./img/Cannon.png");
+ASSET_MANAGER.queueDownload("./img/CannonR.png");
 
 ASSET_MANAGER.queueDownload("./img/Test1.png");
 
