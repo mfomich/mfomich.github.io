@@ -503,7 +503,7 @@ ASSET_MANAGER.downloadAll(function () {
     gameEngine.addEntity(bg);
     gameEngine.addEntity(hero);
     //gameEngine.addEntity(e1);
-    gameEngine.addEntity(a1);
+    //gameEngine.addEntity(a1);
 
     // gameEngine.addEntity(new Projectile(gameEngine));
  
