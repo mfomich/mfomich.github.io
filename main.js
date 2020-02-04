@@ -389,7 +389,7 @@ function Anim(game) {
     this.direction = true;
     this.gravity = 1;
     this.canJump = true;
-    Entity.call(this, game, 200, 300);
+    Entity.call(this, game, 500, 400);
 }
 
 Anim.prototype = new Entity();
@@ -407,7 +407,7 @@ Anim.prototype.draw = function (ctx) {
 	
 	
 
-   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 0.6);
+   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 0.4);
 
     
     Entity.prototype.draw.call(this);
@@ -437,12 +437,12 @@ ASSET_MANAGER.downloadAll(function () {
     var gameEngine = new GameEngine();
     var bg = new Background(gameEngine);
     var hero = new Hero(gameEngine);
-   // var e1 = new Cannon(gameEngine);
+    var e1 = new Cannon(gameEngine);
     var a1 = new Anim(gameEngine);
 
     gameEngine.addEntity(bg);
     gameEngine.addEntity(hero);
-    //gameEngine.addEntity(e1);
+    gameEngine.addEntity(e1);
     gameEngine.addEntity(a1);
 
     // gameEngine.addEntity(new Projectile(gameEngine));
