@@ -377,8 +377,7 @@ Cannon.prototype.draw = function (ctx) {
 }
 
 function Anim(game) {
-    this.C1 = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 604, 728, .20, 3, true, true);
-    this.CR = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 604, 728, .20, 3, true, true);
+    this.Anim1 = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 604, 728, .20, 6, true, true);
     this.jumping = false;
     this.attack = false;
     this.moveR = true;
@@ -454,22 +453,11 @@ Anim.prototype.update = function () {
 
 Anim.prototype.draw = function (ctx) {
 	
-	  if (this.accel != 0) {
-        if (this.direction) {
-            this.C1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
-        } else {
-            this.CR.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
-        }
+	
 
-    } else {
+   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 1);
 
-        if (this.direction) {
-            this.C1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
-        } else {
-            this.CR.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
-        }
-
-    }
+    
     Entity.prototype.draw.call(this);
 }
 
