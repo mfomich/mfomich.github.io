@@ -419,11 +419,11 @@ Bird.prototype.update = function () {
 
     this.x = this.x + this.accel;  
     
-    if (this.x < 150) {
+    if (this.x < 100) {
     	this.moveR = true;
     	this.moveL = false;
     }
-    if (this.x > 700) {
+    if (this.x > 800) {
     	this.moveL = true;
     	this.moveR = false
     }
@@ -432,19 +432,19 @@ Bird.prototype.update = function () {
     if (this.moveR) {
         this.direction = true;
         if (this.accel > 0) {
-            this.accel = 5;
+            this.accel = 4;
 
         } else {
-            this.accel = 3;
+            this.accel = 2;
        }
     }
 
     if (this.moveL) {
         this.direction = false;
         if (this.accel < 0) {
-            this.accel = -5;
+            this.accel = -4;
         } else {
-            this.accel = -3;
+            this.accel = -2;
         }
 
     }
