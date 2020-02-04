@@ -389,7 +389,7 @@ function Anim(game) {
     this.direction = true;
     this.gravity = 1;
     this.canJump = true;
-    Entity.call(this, game, 600, 300);
+    Entity.call(this, game, 650, 350);
 }
 
 Anim.prototype = new Entity();
@@ -407,7 +407,7 @@ Anim.prototype.draw = function (ctx) {
 	
 	
 
-   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 0.3);
+   this.Anim1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 0.2);
 
     
     Entity.prototype.draw.call(this);
