@@ -377,8 +377,8 @@ Cannon.prototype.draw = function (ctx) {
 }
 
 function Anim(game) {
-    this.C1 = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 130, 90, .20, 3, true, true);
-    this.CR = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 130, 90, .20, 3, true, true);
+    this.C1 = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 604, 728, .20, 3, true, true);
+    this.CR = new Animation(ASSET_MANAGER.getAsset("./img/Test1.png"), 0, 0, 604, 728, .20, 3, true, true);
     this.jumping = false;
     this.attack = false;
     this.moveR = true;
