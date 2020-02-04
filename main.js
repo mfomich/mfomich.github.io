@@ -377,8 +377,8 @@ Cannon.prototype.draw = function (ctx) {
 }
 
 function Bird(game) {
-    this.C1 = new Animation(ASSET_MANAGER.getAsset("./img/Jay.png"), 0, 0, 110, 100, .20, 3, true, true);
-    this.CR = new Animation(ASSET_MANAGER.getAsset("./img/JayL.png"), 0, 0, 110, 100, .20, 3, true, false);
+    this.B1 = new Animation(ASSET_MANAGER.getAsset("./img/Jay.png"), 0, 0, 110, 100, .20, 3, true, true);
+    this.BR = new Animation(ASSET_MANAGER.getAsset("./img/JayL.png"), 0, 0, 110, 100, .20, 3, true, false);
     this.jumping = false;
     this.attack = false;
     this.moveR = true;
@@ -456,17 +456,17 @@ Bird.prototype.draw = function (ctx) {
 	
 	  if (this.accel != 0) {
         if (this.direction) {
-            this.C1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
+            this.B1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 1);
         } else {
-            this.CR.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
+            this.BR.drawFrame(this.game.clockTick, ctx, this.x, this.y, 1);
         }
 
     } else {
 
         if (this.direction) {
-            this.C1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
+            this.B1.drawFrame(this.game.clockTick, ctx, this.x, this.y, 1);
         } else {
-            this.CR.drawFrame(this.game.clockTick, ctx, this.x, this.y, 2);
+            this.BR.drawFrame(this.game.clockTick, ctx, this.x, this.y, 1);
         }
 
     }
